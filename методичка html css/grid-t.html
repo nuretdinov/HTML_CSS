@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas:
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+            grid-template-rows: 15vh 1fr 10vh;
+            grid-template-columns: 20% 1fr 15%;
+            grid-gap: 10px;
+            height: 100vh;
+            margin: 0;
+        }
+        header, footer, article, nav, div {
+            padding: 20px;
+            border: 1px solid red;
+        }
+        #header {grid-area: header;}
+        #footer {grid-area: footer;}
+        #article {grid-area: article;}
+        #nav {grid-area: nav;}
+        #ads {grid-area: ads;}
+    </style>
+</head>
+<body>
+    <header id="header">шапка</header>
+    <article id="article">содержимое</article>
+    <nav id="nav">меню</nav>
+    <div id="ads">реклама</div>
+    <footer id="footer">подвал</footer>
+</body>
+</html>

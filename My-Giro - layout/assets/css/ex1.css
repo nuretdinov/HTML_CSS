@@ -1,0 +1,30 @@
+html {
+    font-family: "Segoe UI", sans-serif; /* семейство шрифтов */
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+}
+a {
+    color: green;
+}
+
+#ads{
+
+}
+
+#catalog{
+    display: flex;
+}
+
+.card{
+    margin: 1em;
+    padding: 1em;
+    font-size: 2em;
+    border: 1px solid gray;
+}
+
+section, div {
+
+}

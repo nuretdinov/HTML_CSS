@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: "Segoe UI", sans-serif;
+}
+body {
+    margin: 0;
+}
+/* основные классы общего оформления */
+.container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+h3 {
+    font-weight: 300;
+    font-size: 3em;
+    margin: 0;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+/* классы описывают flex */
+.flex {
+    display: flex;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.column {
+    flex-direction: column;
+}
+.jc-c {
+    justify-content: center;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.ai-c {
+    align-items: center;
+}
+/* описываем шапку сайта */
+header {
+    padding: 1em;
+    background: #fff;
+    box-shadow: 0 0 4px #0008;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+header a {
+    text-decoration: none;
+    color: #000;
+}
+.header-inner {
+    height: 4em;
+}
+header h1 {
+    margin: 0;
+}
+nav a {
+    padding: .5em;
+}
+/* описываем секцию о магазине */
+#seg {
+    height: 40vh;
+    text-align: center;
+    color: white;
+    background: url("assets/img/scooter-3620869_960_720.jpg") no-repeat;
+    background-size: cover;
+}
+#seg h2 {
+    font-weight: 300;
+    font-size: 2.5em;
+    margin: 0;
+}
+.btn {
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+}
+.btn:hover, .btn:focus {
+    color: #fff;
+    background: orange;
+    cursor: pointer;
+}
+/* описываем каталог товаров главной страницы */
+#catalog {
+    background: #fbfbfb;
+}
+.catalog-header {
+    margin-bottom: 20px;
+}
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1em;
+}
+.card {
+    background: #fff;
+    box-shadow: 0 0 8px #0003;
+    padding: 20px;
+    position: relative;
+}
+.card-image {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+.card-title {
+    font-weight: 400;
+    font-size: 14px;
+}
+.card-price {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.card-category {
+    padding: 6px 20px;
+    background: orange;
+    color: white;
+    display: inline-block;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: absolute;
+    left: 0;
+}
+.category {
+    border-radius: 20px;
+    padding: 2px 8px;
+    transition: .3s ease-in-out;
+}
+/* описывает подвал */
+footer {
+    background: #fbfbfb;
+    color: #aaa;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+footer p {
+    font-size: .8em;
+}
+
+.footer-container {
+    gap: 1.2em;
+}
+.footer-half {
+    width: 50%;
+}
+.footer-gap {
+    gap: 5em;
+}
+footer h4 {
+    color: #333;
+}
+footer a {
+    text-decoration: none;
+    color: #aaa;
+    display: block;
+    font-size: .8em;
+}

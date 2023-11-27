@@ -1,0 +1,60 @@
+#flex_id div{
+    border: 1px solid red;
+    padding: 150px
+}
+
+
+
+
+.fx{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    margin: 2em 3em 2em 2em;
+}
+#mainmenu div{
+    margin: 2em;
+}
+#mainmenu img{
+    cursor: pointer;
+}
+#mainmenu a{
+    font-family: Arial;
+    font-size: 1.2em;
+    color: #444;
+    text-decoration: none;
+
+}
+section{
+    justify-content: center;
+}
+#maintext, #mainpic {width: 30%;}
+.al-t{
+    align-items: flex-start;
+}
+h1{
+    font-family: Arial;
+    font-size: 3em;
+    color: #444;
+}
+#main p{
+    font-family: Arial;
+    font-size: 1.3em;
+    color: #666;
+}
+#zakaz{
+    background-color: orange;
+    border: none;
+    padding: 1.3em;
+    border-radius: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+#maintext{
+    padding: 0 2em 2em 0;
+}
+#mainpic{
+    margin-left: 3em;
+}
+#zakazbuttons div {margin: 1em 1em 1em 0;}

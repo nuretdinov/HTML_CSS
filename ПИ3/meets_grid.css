@@ -1,0 +1,66 @@
+body {
+    display: grid;
+    grid-template-areas:
+    "main users"
+    "control control";
+    grid-template-rows: 1fr 100px;
+    grid-template-columns: 1fr 300px;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+
+#main, #users, #control {
+    padding: 20px;
+    border: 1px solid red;
+}
+
+#main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 210px;
+}
+#users {
+    grid-area: users;
+}
+#control {
+    grid-area: control;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/* оформление карточки */
+
+.card{
+    background-color: #444;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 1px 7px 1px 7px;
+    height: 200px;
+}
+
+#main div{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mic{
+    text-align: right;
+    cursor: pointer;
+}
+
+#main img
+{
+    border-radius: 35px;
+}
+
+.pic{
+    text-align: center;
+}
+
+.active{
+    border: 3px solid darkblue;
+}
